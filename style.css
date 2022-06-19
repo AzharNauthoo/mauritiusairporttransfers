@@ -8,6 +8,9 @@
     
     font-family: "Poppins", sans-serif;
   }
+
+
+  /** --------- NAVBAR ----------- **/
   
   header a {
     text-decoration: none;
@@ -113,6 +116,43 @@
   .mobile-menu li {
     margin-bottom: 10px;
   }
+
+
+  /** ----x----- NAVBAR ------x----- **/
+
+  /** --------- Section FORM ----------- **/
+.formSection {
+    background-color: #FDC107;
+    padding:5em 2em;
+}
+#textTitle {
+    color: white;
+    font-weight: bolder;
+}
+
+#textParagraph {
+    font-size: 20px;
+    color: white;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    padding:2.4em;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+  /** ----x----- Section FORM -----x------ **/
+
+
+
+
+
+
+
   
   @media only screen and (max-width: 600px) {
     header nav {
@@ -125,5 +165,9 @@
 
     #brand {
         width:35%;
+      }
+
+      .formParagraph {
+          display: none;
       }
   }
