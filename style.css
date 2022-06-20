@@ -33,7 +33,7 @@
   
   
   
-  ul {
+ .navigation ul {
     list-style: none;
     height: 100%;
     display: flex;
@@ -41,16 +41,16 @@
     justify-content: space-around;
   }
   
-  ul a {
+ .navigation ul a {
     color: black;
   }
   
-  ul li {
+ .navigation ul li {
     padding: 5px;
     margin-left: 10px;
   }
   
-  ul li:hover {
+ .navigation ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }
