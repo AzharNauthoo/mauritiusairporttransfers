@@ -146,10 +146,154 @@
 }
 
   /** ----x----- Section FORM -----x------ **/
+  /** --------- Carousels ----------- **/
+.carousels {
+   text-align: center;
+   background-color: #FDC107;
+   padding: 4em;
+   color:white
+}
+.owl-carousel {
+    width: 100%;
+}
+.owl-dots {
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.owl-dots span {
+    width:20px !important;
+    height:20px !important;
+
+}
+.owl-dots button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-nav button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    color: white !important;
+    font-size: 60px !important;
+    font-weight: bolder !important;
+
+}
+.owl-prev {
+    left:1%;
+}
+.owl-next {
+    right:1%;
+}
+
+.carousels .slide-content img {
+    width:75px !important;
+    height: 75px;
+}
+.carousels .div {
+    display: flex;
+    justify-content: center;
+}
+
+
+  /** -----x---- Carousels ------x----- **/
 
 
 
+  /** --------- Footer ----------- **/
 
+  .footerAnchors a {
+      text-decoration: none;
+      color: white;
+  }
+  .footerAnchors a:hover {
+      color: blue;
+  }
+  /** ------x--- Footer -------x---- **/
+
+  /** ------x--- Price Page-------x---- **/
+.price {
+    width: 85%;
+    margin: 2em auto;
+}
+  .price-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+      
+  }
+
+  .card {
+      border-radius: 5px;
+      border: solid #FDC107 3px;
+      margin:9px;
+  }
+
+  .price-cards .card img {
+      width:300px;
+      height: 235px;
+  }
+
+  .adv-vehicle{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .card strong {
+      padding-left: 25px;
+      padding-bottom: 10px;
+  }
+
+  .capacity {
+      text-align: center;
+  }
+
+  .passenger {
+    text-align: center;
+}
+
+.adv-vehicle i{
+    color:#FDC107
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: bolder;
+    margin:7px;
+}
+.card h4 {
+    margin:0;
+    
+}
+
+.card hr {
+    width:20%;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.pricing {
+    color:#118C4F;
+    font-size:xx-large;
+    font-weight: bolder;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.btns {
+    margin:10px;
+}
+
+  /** ------x--- Price Page-------x---- **/
 
 
 
