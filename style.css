@@ -33,7 +33,7 @@
   
   
   
- .navigation ul {
+   ul {
     list-style: none;
     height: 100%;
     display: flex;
@@ -41,16 +41,16 @@
     justify-content: space-around;
   }
   
- .navigation ul a {
+  ul a {
     color: black;
   }
   
- .navigation ul li {
+ ul li {
     padding: 5px;
     margin-left: 10px;
   }
   
- .navigation ul li:hover {
+ ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }
@@ -236,6 +236,11 @@
       border-radius: 5px;
       border: solid #FDC107 3px;
       margin:9px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   }
 
   .price-cards .card img {
@@ -297,115 +302,139 @@
 
 /* Headings & Font Text */
 .big-heading {
-  font-family: "Poppins";
-  font-size: 4.5rem;
-  line-height: 1.3;
-  font-weight: 700;
-}
+    font-family: "Poppins";
+    font-size: 4rem;
+    /* line-height: 1.3; */
+    font-weight: 700;
+  }
 
-.medium-heading {
-  font-family: "Poppins";
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 400;
-}
+  /* .flex {
+      display: flex;
+      flex-wrap: wrap;
+  } */
+  
+  .medium-heading {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 400;
+  }
+  
+  .crew-option-title {
+    font-family: "Poppins";
+    font-size: 3.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .vehicle-option-title {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  .features-grid-title {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  
+  .features-title {
+    font-family: "Poppins";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 5%
+  }
+  
+  /* Buttons */
+  .home-button {
+    margin: 5% 3% 5% 0;
+  }
+  
+  .crew-option-button {
+    margin: 3% 3% 5% 0;
+  }
+  
+  /* Sections */
+  .white-section {
+    background-color: #fff;
+  }
+  
+  /* Images */
+  .title-image {
+    width: 35%;
+     position: absolute;
+    right: 15%; 
+  }
+  
+  .vehicle-image {
+    width: 80%;
+    margin: 10%;
+  }
+  
+  .features-icon {
+    margin: 10%;
+    width: 20%;
+  }
+  
+  .features-image {
+    position: absolute;
+    width: 30%;
+    right: 17%;
+  }
+  
+  .testimonials-image {
+    width: 10%;
+    margin: 20px;
+    border-radius: 100%;
+  }
+  
+  
+  /* Containers */
+  .container-fluid {
+    padding: 7% 15%;
+  }
+  
+  .features-grid {
+    margin: 2%;
+    text-align: center;
+  }
+  
+  .vehicle {
+    text-align: center;
+  }
+  
+  .block-button {
+    text-align: center;
+  }
+  
+  .features-image-container {
+    padding: 10% 0;
+  }
 
-.crew-option-title {
-  font-family: "Poppins";
-  font-size: 3.5rem;
-  line-height: 1.3;
-  font-weight: 700;
-  text-align: center;
-}
+  /*-------Thank you page -------*/
 
-.vehicle-option-title {
-  font-family: "Poppins";
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 400;
-}
+  .ty-card {
+      margin:25px auto;
+      width: 80%;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      border-radius: 15px;
+    
+  }
 
-.features-grid-title {
-  font-family: "Poppins";
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 700;
-}
+  .ty-card h1 {
+      text-align: center;
+      padding:20px;
 
-.features-title {
-  font-family: "Poppins";
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 700;
-  margin-bottom: 5%
-}
+  }
 
-/* Buttons */
-.home-button {
-  margin: 5% 3% 5% 0;
-}
-
-.crew-option-button {
-  margin: 3% 3% 5% 0;
-}
-
-/* Sections */
-.white-section {
-  background-color: #fff;
-}
-
-/* Images */
-.title-image {
-  width: 35%;
-  position: absolute;
-  right: 15%;
-}
-
-.vehicle-image {
-  width: 80%;
-  margin: 10%;
-}
-
-.features-icon {
-  margin: 10%;
-  width: 20%;
-}
-
-.features-image {
-  position: absolute;
-  width: 30%;
-  right: 17%;
-}
-
-.testimonials-image {
-  width: 10%;
-  margin: 20px;
-  border-radius: 100%;
-}
-
-
-/* Containers */
-.container-fluid {
-  padding: 7% 15%;
-}
-
-.features-grid {
-  margin: 2%;
-  text-align: center;
-}
-
-.vehicle {
-  text-align: center;
-}
-
-.block-button {
-  text-align: center;
-}
-
-.features-image-container {
-  padding: 10% 0;
-}
-
+  .ty-content {
+      padding:20px;
+  }
 
   
   @media only screen and (max-width: 600px) {
@@ -424,4 +453,11 @@
       .formParagraph {
           display: none;
       }
+
+      .title-image {
+        display: none;
+      }
+       .features-image {
+     display: none;
+    }
   }
