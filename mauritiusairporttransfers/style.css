@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    font-family: "Poppins", sans-serif;
+  }
+
+
+  /** --------- NAVBAR ----------- **/
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0 40px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    width:25%;
+  }
+  
+  
+  
+   ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul a {
+    color: black;
+  }
+  
+ ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+ ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  #book {
+    border-radius: 5px;
+    padding: 5px 8px;
+  }
+  
+  #book {
+    border: 1px solid #FDC107;
+  }
+  
+  #book a {
+    color: #FDC107;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: white;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+
+.remove {
+  display:none;
+}
+  /** ----x----- NAVBAR ------x----- **/
+
+  /** --------- Section FORM ----------- **/
+.formSection {
+    background-color: #FDC107;
+    padding:5em 2em;
+}
+#textTitle {
+    color: white;
+    font-weight: bolder;
+}
+
+#textParagraph {
+    font-size: 20px;
+    color: white;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    padding:2.4em;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+  /** ----x----- Section FORM -----x------ **/
+  /** --------- Carousels ----------- **/
+.carousels {
+   text-align: center;
+   background-color: #FDC107;
+   padding: 4em;
+   color:white
+}
+.owl-carousel {
+    width: 100%;
+}
+.owl-dots {
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.owl-dots span {
+    width:20px !important;
+    height:20px !important;
+
+}
+.owl-dots button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-nav button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    color: white !important;
+    font-size: 60px !important;
+    font-weight: bolder !important;
+
+}
+.owl-prev {
+    left:1%;
+}
+.owl-next {
+    right:1%;
+}
+
+.carousels .slide-content img {
+    width:75px !important;
+    height: 75px;
+}
+.carousels .div {
+    display: flex;
+    justify-content: center;
+}
+
+
+  /** -----x---- Carousels ------x----- **/
+
+
+
+  /** --------- Footer ----------- **/
+
+  .footerAnchors a {
+      text-decoration: none;
+      color: white;
+  }
+  .footerAnchors a:hover {
+      color: blue;
+  }
+  /** ------x--- Footer -------x---- **/
+
+  /** ------x--- Price Page-------x---- **/
+.price {
+    width: 85%;
+    margin: 2em auto;
+}
+  .price-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+      
+  }
+
+  .card {
+      border-radius: 5px;
+      border: solid #FDC107 3px;
+      margin:9px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+
+  .price-cards .card img {
+      width:300px;
+      height: 235px;
+  }
+
+  .adv-vehicle{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .card strong {
+      padding-left: 25px;
+      padding-bottom: 10px;
+  }
+
+  .capacity {
+      text-align: center;
+  }
+
+  .passenger {
+    text-align: center;
+}
+
+.adv-vehicle i{
+    color:#FDC107
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: bolder;
+    margin:7px;
+}
+.card h4 {
+    margin:0;
+    
+}
+
+.card hr {
+    width:20%;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.pricing {
+    color:#118C4F;
+    font-size:xx-large;
+    font-weight: bolder;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.btns {
+    margin:10px;
+}
+
+  /** ------x--- Price Page-------x---- **/
+
+/* Headings & Font Text */
+.big-heading {
+    font-family: "Poppins";
+    font-size: 4rem;
+    /* line-height: 1.3; */
+    font-weight: 700;
+  }
+
+  /* .flex {
+      display: flex;
+      flex-wrap: wrap;
+  } */
+  
+  .medium-heading {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 400;
+  }
+  
+  .crew-option-title {
+    font-family: "Poppins";
+    font-size: 3.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .vehicle-option-title {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  .features-grid-title {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  
+  .features-title {
+    font-family: "Poppins";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 5%
+  }
+  
+  /* Buttons */
+  .home-button {
+    margin: 5% 3% 5% 0;
+  }
+  
+  .crew-option-button {
+    margin: 3% 3% 5% 0;
+  }
+  
+  /* Sections */
+  .white-section {
+    background-color: #fff;
+  }
+  
+  /* Images */
+  .title-image {
+    width: 35%;
+     position: absolute;
+    right: 15%; 
+  }
+  
+  .vehicle-image {
+    width: 80%;
+    margin: 10%;
+  }
+  
+  .features-icon {
+    margin: 10%;
+    width: 20%;
+  }
+  
+  .features-image {
+    position: absolute;
+    width: 30%;
+    right: 17%;
+  }
+  
+  .testimonials-image {
+    width: 10%;
+    margin: 20px;
+    border-radius: 100%;
+  }
+  
+  
+  /* Containers */
+  .container-fluid {
+    padding: 7% 15%;
+  }
+  
+  .features-grid {
+    margin: 2%;
+    text-align: center;
+  }
+  
+  .vehicle {
+    text-align: center;
+  }
+  
+  .block-button {
+    text-align: center;
+  }
+  
+  .features-image-container {
+    padding: 10% 0;
+  }
+
+  /*-------Thank you page -------*/
+
+  .ty-card {
+      margin:25px auto;
+      width: 80%;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      border-radius: 15px;
+    
+  }
+
+  .ty-card h1 {
+      text-align: center;
+      padding:20px;
+
+  }
+
+  .ty-content {
+      padding:20px;
+  }
+/*-------Booking Form page -------*/
+.booking-form {
+  border: 3px solid #FDC107;
+  padding:20px;
+  border-radius:5px;
+}
+
+  
+  @media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+
+    #brand {
+        width:35%;
+      }
+
+      .formParagraph {
+          display: none;
+      }
+
+      .title-image {
+        display: none;
+      }
+       .features-image {
+     display: none;
+    }
+  }
