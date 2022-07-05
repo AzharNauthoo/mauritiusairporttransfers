@@ -15,6 +15,8 @@ $(document).ready(function () {
         autoplayHoverPause: true
 
     });
+
+
 });
 
 window.addEventListener('load', () => {
