@@ -3,7 +3,6 @@
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-
 include("connection.php");
 
 $sql = "SELECT username, password 
