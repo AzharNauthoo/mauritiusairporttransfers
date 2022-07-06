@@ -6,7 +6,7 @@ $password = $_POST['password'];
 include("connection.php");
 
 $sql = "SELECT username, password 
-FROM login
+FROM adminLogin
 WHERE username = '$username' AND password = '$password'";
 
 $result = mysqli_query($conn, $sql);
