@@ -144,18 +144,18 @@
       <h2 class="medium-heading">Just A Few More Info and You Are Booked</h2>
 
 
-      <form class="booking-form" >
+      <form class="booking-form" action="booking.php" method="POST">
         <div class="row mb-3">
           <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="name">
           </div>
         </div>
 
         <div class="row mb-3">
           <label for="phoneNumber3" class="col-sm-2 col-form-label">Phone No.</label>
           <div class="col-sm-10">
-            <input type="number" class="form-control" id="inputNumber3">
+            <input type="number" class="form-control" id="inputNumber3" name="phoneNum">
           </div>
         </div>
 
@@ -164,11 +164,11 @@
         <div class="row mb-3">
           <label for="autoSizingSelect" class="col-sm-2 col-form-label">Transfer Type</label>
           <div class="col-sm-10">
-            <select  class="form-select" >
+            <select  class="form-select" name="transferType" >
               <option selected>Choose...</option>
-              <option value="1">From Airport</option>
-              <option value="2">To Airport</option>
-              <option value="3">From and To Airport (2way)</option>
+              <option value="From Airport">From Airport</option>
+              <option value="To Airport">To Airport</option>
+              <option value="From and To Airport (2way)">From and To Airport (2way)</option>
             </select>
           </div>
         </div>
@@ -176,14 +176,14 @@
         <div class="row mb-3">
           <label for="inputFlightNum3" class="col-sm-2 col-form-label">Flight No.</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="flightNumber">
           </div>
         </div>
 
         <div class="row mb-3">
           <label for="inputDropOff3" class="col-sm-2 col-form-label">Drop off Location / Hotel</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" list="locationList">
+            <input type="text" class="form-control" list="locationList" name="dropOffLocation">
             <datalist id="locationList">
                 <option value="If your hotel is not on the list, use its location instead" ></option>
                 <option value="Anantara Iko Mauritius Resort & Villas"></option> 
@@ -225,35 +225,35 @@
         <div class="row mb-3">
           <label for="inputDate3" class="col-sm-2 col-form-label">Pick up Date</label>
           <div class="col-sm-10">
-            <input type="date" class="form-control">
+            <input type="date" class="form-control" name="pickUpDate">
           </div>
         </div>
 
         <div class="row mb-3">
           <label for="inputTime3" class="col-sm-2 col-form-label">Pick up Time</label>
           <div class="col-sm-10">
-            <input type="time" class="form-control">
+            <input type="time" class="form-control" name="pickUpTime">
           </div>
         </div>
 
         <div class="row mb-3">
           <label for="adultPassengerNum3" class="col-sm-2 col-form-label">Adult Passengers</label>
           <div class="col-sm-10">
-            <input type="number" max="10" min="1" class="form-control">
+            <input type="number" max="10" min="1" class="form-control" name="adultPassengerNum">
           </div>
         </div>
 
         <div class="row mb-3">
           <label for="childrenPassengerNum3" class="col-sm-2 col-form-label">Children Passengers</label>
           <div class="col-sm-10">
-            <input type="number" max="10" min="1" class="form-control">
+            <input type="number" max="10" min="1" class="form-control" name="childrenPassengerNum">
           </div>
         </div>
 
         <div class="row mb-3">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Your Best Email</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control">
+            <input type="email" class="form-control" name="email">
           </div>
         </div>
 
@@ -261,21 +261,21 @@
           <legend class="col-form-label col-sm-2 pt-0">Baby Seats</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="babyseat" id="gridRadios1" value="option1" checked>
+              <input class="form-check-input" type="radio" name="babyseat" id="gridRadios1" value="0" name="babyseatNumber" checked>
               <label class="form-check-label" for="gridRadios1">
                 No babyseat
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="babyseat" id="gridRadios2" value="option2">
+              <input class="form-check-input" type="radio" name="babyseat" id="gridRadios2" value="1" name="babyseatNumber">
               <label class="form-check-label" for="gridRadios2">
                 1 babyseat
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="babyseat" id="gridRadios3" value="option3">
+              <input class="form-check-input" type="radio" name="babyseat" id="gridRadios3" value="2" name="babyseatNumber">
               <label class="form-check-label" for="gridRadios3">
                 2 or more babyseats
               </label>
@@ -287,14 +287,14 @@
           <legend class="col-form-label col-sm-2 pt-0">Can we talk on whatsapp?</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Yes" checked name="whatsapp">
               <label class="form-check-label" for="gridRadios1">
                 Yes
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="No" name="whatsapp">
               <label class="form-check-label" for="gridRadios2">
                 I prefer email
               </label>
@@ -305,7 +305,7 @@
         <div class="row mb-3">
           <label for="inputRequest3" class="col-sm-2 col-form-label">Special Requests</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Golfbags/ Surfboards/ Wheelchair/ Guitar">
+            <input type="text" class="form-control" placeholder="Golfbags/ Surfboards/ Wheelchair/ Guitar" name="specialRequest">
           </div>
         </div>
 
