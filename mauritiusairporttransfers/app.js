@@ -35,7 +35,9 @@ window.addEventListener('load', () => {
     }
     
     
-    
+    })
+
+
 function returnCar() {
    var vehicle =  document.getElementById("car_car").value;
    document.getElementById('vehicle_type').value = vehicle;
@@ -52,4 +54,4 @@ function returnSuv() {
     var vehicle =  document.getElementById("van_van").value;
     document.getElementById('vehicle_type').value = vehicle;
  }
-})
+
