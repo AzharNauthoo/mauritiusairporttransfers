@@ -47,9 +47,9 @@
 
          <main>
              <div class="price">
-                 <h1 style="text-align: center;">Choose your car.</h1>
+                 <h1  style="text-align: center;">Choose your car.</h1>
                  <div class="price-cards">
-                     <div class="card">
+                     <div class="card " id="car">
                          <h3>Standard Car</h3>
                          <img src="images/car.jpg">
                          <h4 id="std_car_price" class="pricing">$31</h4>
@@ -69,10 +69,12 @@
                         
 
                          </div>
-                         <button type="button" class="btn btns btn-primary">Select Car ></button>
+                         <form name = "car" action = "form.html" method ="get">
+                         <button type="submit"  class="btn btns btn-primary button-width"
+                          id="car_car" name = "carCar" value="car">Select Car ></button>
 
                      </div>
-                     <div class="card">
+                     <div class="card " id="suv">
                          <h3>SUV/ Cross Over</h3>
                          <img src="images/suv.webp">
                          <h4 id="suv_price" class="pricing">$37</h4>
@@ -91,9 +93,10 @@
                           
 
                          </div>
-                         <button type="button" class="btn btns btn-primary">Select SUV ></button>
+                         <button type="submit"  class="btn btns btn-primary button-width" 
+                         id="suv_suv" name = "suvSuv" value="suv">Select SUV ></button>
                      </div>
-                     <div class="card">
+                     <div class="card " id="van">
                         <h3>Van</h3>
                         <img src="images/van.jpg">
                         <h4 id="van_price" class="pricing">$50</h4>
@@ -112,7 +115,9 @@
                        
 
                         </div>
-                        <button type="button" class="btn btns btn-primary">Select Van ></button>
+                        
+                        <button type="submit" class="btn btns btn-primary button-width" name="vanVan" 
+                        id="van_van" value="van">Select Van ></button></form>
 
                     </div>
                  </div>
