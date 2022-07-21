@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mauritius Airport Transfer</title>
+
+  <!--Bootstrap Scripts-->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!--CSS Styles-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--FontAwesome Kit-->
+  <script src="https://kit.fontawesome.com/cc438a93fa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="brand"><img src="images/MAUITIUS-AIRPORT-TRANSFERS-LOGO.webp" class="img-fluid"/></div>
+        <nav >
+          <ul>
+            <li><a href="/home">Taxi Service</a></li>
+            <li><a href="/products">Luxury Transfer</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li id="book"><a href="#FormSection" >Book Now</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/home">Taxi Service</a></li>
+                <li><a href="/products">Luxury Transfer</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li id="book"><a href="#FormSection" >Book Now</a></li>
+            </ul>
+          </div>
+     </header>
+
+  <!-- Form -->
+  <!-- <section class="white-section" id="form">
+    <div class="container-fluid">
+      <h1 class="form-title">Thank You For Accepting The Quote. You Are In Good Hands</h1>
+
+      <div class="row">
+        <div class="form-sheet col-lg-6">
+          <h2 class="medium-heading">Just A Few More Info and You Are Booked</h2>
+          <p>Fill in the form to confirm your booking</p>
+          <hr class="form-rule"> -->
+
+          <!-- <form class="sheet">
+            <p>Name <input class="form-input" type="text" name="name" value=""></p><br>
+            Phone number <input class="form-input" type="number" name="number" value=""><br>
+            Transfer type <select class="form-input">
+              <option>From Airport</option>
+              <option>To Airport</option>
+              <option>From and To Airport (2-way)</option>
+            </select><br>
+            Flight Number <input class="form-input" type="text" name="flightNo"><br>
+            Drop off Location / Hotel <select class="form-input">
+              <option> Anantara Iko Mauritius Resort & Villas></option>
+              <option> Ambre Resort & Spa></option>
+              <option> Aanari Hotel & Spa></option>
+              <option> Angsana Balaclava></option>
+              <option> Anelia Beach Resort & Spa></option>
+              <option> Baystone Boutique hotel></option>
+              <option> Be Cosy Apart Hotel></option>
+              <option> Canonnier Beachcomber Resort & Spa></option>
+              <option> Constance Belle Mare Plage></option>
+              <option> Constance Le Prince Maurice></option> -->
+              <!-- <option> Calodyne Sur Mer></option>
+              <option> Casa Florida Hotel & Spa></option>
+              <option> Club Med La Pointe aux Canonniers></option>
+              <option> Club Med La Plantation of Albion></option>
+              <option> Coin de Mire Attitude Hotel></option>
+              <option> Cocotiers hotel></option>
+              <option> Coral Azur Beach Resort></option>
+              <option> Dinarobin Hotel Golf & Spa></option>
+              <option> Emeraude Beach Attitude Hotel></option>
+              <option> Four Seasons Resort Mauritius at Anahita></option>
+              <option> Friday Attitude></option>
+              <option> Gold Crest Business Hotel></option>
+              <option> Gold nest hotel></option>
+              <option> Gold Beach Resort></option>
+              <option> Hibiscus Beach Resort & Spa></option>
+              <option> Hotel des Deux Mondes></option>
+              <option> Hotel 20 Degree Sud></option>
+              <option> Hotel Pearl Beach Resort & Spa></option>
+              <option> Hotel Tamarin></option>
+              <option> Hotel Outrigger Mauritius Beach Resort></option>
+              <option> Hilton Mauritius Resort & Spa></option>
+              <option> Hotel Veranda Palmar></option>
+              <option> Hotel Tropical Attitude></option>
+            </select><br>
+            Pick up Date <input type="date" name="date"><br>
+            Pick up Time <input type="time" name="" value=""><br>
+            Adult Passengers <input type="number" name="noAdultPassengers" min="1" max="10"><br>
+            Children Passengers <input type="number" name="noChildrenPassengers" min="1" max="10"><br>
+            Your Best Email <input type="email" name="email" placeholder="email@example.com"><br>
+            Baby Seats <br>
+            <table>
+              <tr>
+                <td><input type="radio" name="" value=""> No babyseat</td>
+                <td><input type="radio" name="" value=""> 1 babyseat</td>
+                <td><input type="radio" name="" value=""> 2 or more babyseat</td>
+              </tr>
+            </table>
+            Can we talk on whatsapp?<br>
+            <table>
+              <tr>
+                <td><input type="radio" name="" value=""> Yes</td>
+                <td><input type="radio" name="" value=""> I prefer email</td>
+              </tr>
+            </table><br>
+            Special Request <input type="text" name="specialRequest" placeholder="Golfbags/ Surfboards/ Wheelchair/ Guitar"><br>
+            <button class="btn col-8 btn-success " type="button" name="button">Book a transfer </button>
+
+
+
+
+
+          </form>
+        </div>
+      </div>
+  </section> --> 
+
+  <section class="white-section" id="form1">
+    <div class="container-fluid form-container">
+
+      <h1 class="form-title">Thank You For Accepting The Quote.<br> You Are In Good Hands</h1>
+      <h2 class="medium-heading">Just A Few More Info and You Are Booked</h2>
+
+
+      <form class="booking-form" action="booking.php" method="POST">
+        <input type = "hidden" value="" id = "vehicle_type" name="vehicleType">
+        <div class="row mb-3">
+          <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="name">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="phoneNumber3" class="col-sm-2 col-form-label">Phone No.</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputNumber3" name="phoneNum">
+          </div>
+        </div>
+
+
+
+        <div class="row mb-3">
+          <label for="autoSizingSelect" class="col-sm-2 col-form-label">Transfer Type</label>
+          <div class="col-sm-10">
+            <select  class="form-select" name="transferType" >
+              <option selected>Choose...</option>
+              <option value="From Airport">From Airport</option>
+              <option value="To Airport">To Airport</option>
+              <option value="From and To Airport (2way)">From and To Airport (2way)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputFlightNum3" class="col-sm-2 col-form-label">Flight No.</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="flightNumber">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputDropOff3" class="col-sm-2 col-form-label">Drop off Location / Hotel</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" list="locationList" name="dropOffLocation">
+            <datalist id="locationList">
+                <option value="If your hotel is not on the list, use its location instead" ></option>
+                <option value="Anantara Iko Mauritius Resort & Villas"></option> 
+                <option value="Ambre Resort & Spa"></option> 
+                <option value="Aanari Hotel & Spa"></option>
+                <option value="Angsana Balaclava"></option>
+                <option value="Anelia Beach Resort & Spa"></option>
+                <option value="Baystone Boutique hotel"></option>
+                <option value="Be Cosy Apart Hotel"></option>
+                <option value="Canonnier Beachcomber Resort & Spa"></option>
+                <option value="Constance Belle Mare Plage"></option>
+                <option value="Constance Le Prince Maurice"></option> -->
+                <option value="Calodyne Sur Mer"></option>
+                <option value="Casa Florida Hotel & Spa"></option>
+                <option value="Club Med La Pointe aux Canonniers"></option>
+                <option value="Club Med La Plantation of Albion"></option>
+                <option value="Coin de Mire Attitude Hotel"></option>
+                <option value="Cocotiers hotel"></option>
+                <option value="Coral Azur Beach Resort"></option> 
+                <option value="Dinarobin Hotel Golf & Spa"></option>
+                <option value="Emeraude Beach Attitude Hotel"></option>
+                <option value="Four Seasons Resort Mauritius at Anahita"></option>
+                <option value="Friday Attitude"></option>
+                <option value="Gold Crest Business Hotel"></option>
+                <option value="Gold nest hotel"></option>
+                <option value="Gold Beach Resort"></option>
+                <option value="Hibiscus Beach Resort & Spa"></option>
+                <option value="Hotel des Deux Mondes"></option>
+                <option value="Hotel 20 Degree Sud"></option>
+                <option value="Hotel Pearl Beach Resort & Spa"></option>
+                <option value="Hotel Tamarin"></option>
+                <option value="Hotel Outrigger Mauritius Beach Resort"></option>                     
+                <option value="Hilton Mauritius Resort & Spa"></option>
+                <option value="Hotel Veranda Palmar"></option>
+                <option value="Hotel Tropical Attitude"></option>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputDate3" class="col-sm-2 col-form-label">Pick up Date</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" name="pickUpDate">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputTime3" class="col-sm-2 col-form-label">Pick up Time</label>
+          <div class="col-sm-10">
+            <input type="time" class="form-control" name="pickUpTime">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="adultPassengerNum3" class="col-sm-2 col-form-label">Adult Passengers</label>
+          <div class="col-sm-10">
+            <input type="number" max="10" min="1" class="form-control" name="adultPassengerNum">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="childrenPassengerNum3" class="col-sm-2 col-form-label">Children Passengers</label>
+          <div class="col-sm-10">
+            <input type="number" max="10" min="1" class="form-control" name="childrenPassengerNum">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Your Best Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" name="email">
+          </div>
+        </div>
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Baby Seats</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="gridRadios1" value="0" name="babyseatNumber" checked>
+              <label class="form-check-label" for="gridRadios1">
+                No babyseat
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="gridRadios2" value="1" name="babyseatNumber">
+              <label class="form-check-label" for="gridRadios2">
+                1 babyseat
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="gridRadios3" value="2" name="babyseatNumber">
+              <label class="form-check-label" for="gridRadios3">
+                2 or more babyseats
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Can we talk on whatsapp?</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio"  id="gridRadios1" value="Yes" checked name="whatsapp">
+              <label class="form-check-label" for="gridRadios1">
+                Yes
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="gridRadios2" value="No" name="whatsapp">
+              <label class="form-check-label" for="gridRadios2">
+                I prefer email
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="row mb-3">
+          <label for="inputRequest3" class="col-sm-2 col-form-label">Special Requests</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="Golfbags/ Surfboards/ Wheelchair/ Guitar" name="specialRequest">
+          </div>
+        </div>
+
+        <button type="submit" class="book-transfer-button btn btn-lg col-12 btn-success">Book A Transfer<i class="icon fa-solid fa-circle-chevron-right"></i></button>
+      </form>
+
+    </div>
+  </section>
+  
+       
+<footer class="bg-dark text-center text-white">
+    
+    <div class="container p-4">
+      
+      <section class="mb-4">
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+      
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+       
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+       
+     
+     
+      <section class="footerAnchors">
+    <br>
+      
+        <div class="row">
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+                <h5 >Terms & Conditions</h5>
+            </a>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+            
+                <h5 >Privacy Policy</h5>
+            </a>
+          </div>
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+
+                <h5 >Contact</h5>
+            </a>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+
+                <h5 >Directions</h5>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="#">Mauritius Airport Transfers</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="app.js"></script>
+        
+
+
+</body>
+
+</html>

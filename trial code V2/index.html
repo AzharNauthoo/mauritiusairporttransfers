@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mauritius Airport Transfers</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+              <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+
+
+
+        <header>
+            <div id="brand"><img src="images/MAUITIUS-AIRPORT-TRANSFERS-LOGO.webp" class="img-fluid"/></div>
+            <nav >
+              <ul>
+                <li><a href="/home">Taxi Service</a></li>
+                <li><a href="/products">Luxury Transfer</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li id="book"><a href="#FormSection" >Book Now</a></li>
+              </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/home">Taxi Service</a></li>
+                    <li><a href="/products">Luxury Transfer</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li id="book"><a href="#FormSection" >Book Now</a></li>
+                </ul>
+              </div>
+         </header>
+
+ <!-- Hero section -->      
+ <section class="homepage white-section" id="title">
+    <div class="container-fluid">
+      <div class="row flex">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Book your airport transfer.</h1>
+          <h3 class="medium-heading">At an affordable price.</h3>
+          <h3 class="medium-heading">To any hotel in Mauritius.</h3>
+          
+          ➢ Guaranteed Pick-up<br>
+          ➢ One Clear Price<br>
+          ➢ Certified Vehicles<br>
+          <div class="button_flex">
+             <a href="#FormSection" ><button type="button" class="btn btn-lg btn-warning home-button">REQUEST FREE QUOTE</button></a>
+             <a href="https://api.whatsapp.com/send?phone=23057853395&text=%5BMauritius%20Airport%20Transfer%20enquiry%5D%3A%20%0AHello%2C%20I%20would%20like%20to%20enquire%20about%20an%20airport%20transfer.%20" ><button type="button" class="btn btn-lg btn-outline-warning home-button">MESSAGE US</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image image-fluid" src="images/woman_airport.png" alt="woman at airport">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+         <section class="formSection" id="FormSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 id="textTitle">
+                            How To Book A Transfer ?<br> Fill in the form ⮞
+                        </h1>
+                        <p id="textParagraph" class="formParagraph choose">
+                            Leader in Transport service since 1980, we offer Taxi Services, Sightseeing
+                             Tours and Airport Transfers to all tourists from around the world. We put at your disposal a wide 
+                             range of spacious and air-conditioned
+                             vehicles including cars and minibuses. Our specialized Team is at your disposal 24/7 to guide 
+                             you through the most popular tourist attractions in Mauritius.
+                            </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            <form action="prices.html" method="GET" name="form" id="form">
+                                <h4 style="color:#FDC107;text-align: center;">Get $5 Off Your First Transfer</h4>
+                                <hr>
+                                
+                <div class="container">
+                    <div class="row">
+                       <label for="type_transfer" class="col-md-4 col-xs-12 ">Transfer Type</label>
+                       <select id ="type_transfer" autofocus required class="inputs col-md-8 col-xs-12" name="TransferType">
+                         <option selected>From Airport</option>
+                         <option>To Airport</option>
+                         <option>Two Way Transfer</option>
+                       </select>
+                       </div>
+                </div>
+                <br>
+                       <div class="container">
+                        <div class="row">
+                           <label for="location" class="col-md-4 col-xs-12">Destination/ Hotel name</label>
+                           <input autocomplete="off"  id="location" type="text" value required  class="inputs col-md-8 col-xs-12" name="Destination" list="locationList"/>
+                           <datalist id="locationList">
+                               <option value="If your hotel is not on the list, use its location instead" ></option>
+                               <option value="Anantara Iko Mauritius Resort & Villas"></option> 
+                               <option value="Ambre Resort & Spa"></option> 
+                               <option value="Aanari Hotel & Spa"></option>
+                               <option value="Angsana Balaclava"></option>
+                               <option value="Anelia Beach Resort & Spa"></option>
+                               <option value="Baystone Boutique hotel"></option>
+                               <option value="Be Cosy Apart Hotel"></option>
+                               <option value="Canonnier Beachcomber Resort & Spa"></option>
+                               <option value="Constance Belle Mare Plage"></option>
+                               <option value="Constance Le Prince Maurice"></option> -->
+                               <option value="Calodyne Sur Mer"></option>
+                               <option value="Casa Florida Hotel & Spa"></option>
+                               <option value="Club Med La Pointe aux Canonniers"></option>
+                               <option value="Club Med La Plantation of Albion"></option>
+                               <option value="Coin de Mire Attitude Hotel"></option>
+                               <option value="Cocotiers hotel"></option>
+                               <option value="Coral Azur Beach Resort"></option> 
+                               <option value="Dinarobin Hotel Golf & Spa"></option>
+                               <option value="Emeraude Beach Attitude Hotel"></option>
+                               <option value="Four Seasons Resort Mauritius at Anahita"></option>
+                               <option value="Friday Attitude"></option>
+                               <option value="Gold Crest Business Hotel"></option>
+                               <option value="Gold nest hotel"></option>
+                               <option value="Gold Beach Resort"></option>
+                               <option value="Hibiscus Beach Resort & Spa"></option>
+                               <option value="Hotel des Deux Mondes"></option>
+                               <option value="Hotel 20 Degree Sud"></option>
+                               <option value="Hotel Pearl Beach Resort & Spa"></option>
+                               <option value="Hotel Tamarin"></option>
+                               <option value="Hotel Outrigger Mauritius Beach Resort"></option>                     
+                               <option value="Hilton Mauritius Resort & Spa"></option>
+                               <option value="Hotel Veranda Palmar"></option>
+                               <option value="Hotel Tropical Attitude"></option>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <label for="number_of_passengers" class=" col-md-4 col-xs-12 ">Number Of Passengers</label>
+                            <select required class="col-md-8 col-xs-12" name="number of passengers" id="number_of_passengers">
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="+10">+10</option>
+             
+                              </select>
+                        </div>
+                    </div>  
+                    <br>   
+                    <div  class="d-flex justify-content-center align-content-center ">                   
+                          <button type="submit" class="btn btn-warning btn-lg" style="margin: auto;width:90%;">Request Free Quote</button>
+                    </div>
+    
+                            </form>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Crew Options -->
+<section class="white-section" id="crew-options">
+    <div class="container-fluid">
+      <h1 class="crew-option-title">Choose The Best Option For Your Crew</h1>
+
+      <div class="row">
+        <div class="vehicle col-lg-4">
+          <img class="vehicle-image" src="images/car.jpg" alt="standard-car">
+          <h3 class="vehicle-option-title">STANDARD CAR</h3>
+          <p>For Solo / Couple</p>
+        </div>
+
+        <div class="vehicle col-lg-4">
+          <img class="vehicle-image" src="images/suv.webp" alt="suv">
+          <h3 class="vehicle-option-title">CROSSOVER / SUV</h3>
+          <p>For Family</p>
+        </div>
+
+        <div class="vehicle col-lg-4">
+          <img class="vehicle-image" src="images/van.jpg" alt="van">
+          <h3 class="vehicle-option-title">EXECUTIVE VAN</h3>
+          <p>For Groups up to 10</p>
+        </div>
+      </div>
+      <center>
+        <div class="d-grid col-6">
+         <a href="#FormSection" >  <button type="button" class="crew-option-button btn btn-outline-warning btn-lg ">Book Now ></button></a>
+        </div>
+      </center>
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+<section class="carousels">
+    <h1 style="text-align:center ;">What Our Customers Say About Us</h1>
+
+    <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+            <div class="slide-content">
+                <div class="div">
+                    <img src="images/profile-picture-1.webp">
+
+                </div>
+                <h2>Sam Owens</h2>
+
+                <h3>★★★★★</h3>
+                <p>I'd like to compliment the Mauritius Airport Transfer driver for a fantastic journey. Furthermore, 
+                    the high level of service we experienced at such a low price is out of this world.
+                    Without a doubt, when we return to Mauritius, we will seek your services again. Highly recommended.</p>
+                 
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <div class="div">
+                    <img src="images/profile-picture-2.webp">
+
+                </div>
+                <h2>Natalia Brison</h2>
+
+                <h3>★★★★★</h3>
+
+                <p>I sought cab quotes from numerous island taxi providers. Mauritius Airport Transfer, on the 
+                    other hand, provided me by far the best pricing for a journey from 
+                    the airport to Grand Baie. The service was excellent, and I couldn't 
+                    have been happier for the amount I spent.</p>
+                 
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <div class="div">
+                    <img src="images/profile-picture-3.webp">
+
+                </div>
+                <h2>Emma Knot</h2>
+
+                <h3>★★★★★</h3>
+
+                <p>
+                    Everything was organized by Danny. We took the Mauritius Airport Transfer to and from the airport,
+                     and they were fantastic. W
+                    e also reserved them for a day of sightsee
+                    ing. Sanjay, our driver, was fantastic on our day out. Thank you very much!
+                </p>
+             
+            </div>
+        </div>
+        
+    </div>
+</section> 
+
+
+<!-- Features -->
+<section class="white-section" id="features">
+    <div class="container-fluid">
+      <h1 class="features-title">What We Do Best</h1>
+
+      <div class="row">
+        <div class="col-lg-8">
+
+          <div class="row">
+            <div class="features-grid border rounded border-warning col-lg-4">
+              <img class="features-icon" src="images/airplane.png" alt="airplane">
+              <h1 class="features-grid-title">Airport Transfers</h1>
+              <p class="features-text">No reservation costs. Great rates. We serve all around the island from Airport to Villas, Hotels or any other accomodation.</p>
+            </div>
+
+            <div class="features-grid border rounded border-warning col-lg-4">
+              <img class="features-icon" src="images/taxi.png" alt="taxi">
+              <h1 class="features-grid-title">Taxi Service</h1>
+              <p class="features-text">No reservation costs. Great rates. We serve all around the island from Airport to Villas, Hotels or any other accomodation.</p>
+            </div>
+
+            <div class="features-grid border rounded border-warning col-lg-4">
+              <img class="features-icon" src="images/transfer.png" alt="taxi">
+              <h1 class="features-grid-title">Activities</h1>
+              <p class="features-text">No reservation costs. Great rates. We serve all around the island from Airport to Villas, Hotels or any other accomodation.</p>
+            </div>
+
+            <div class="features-grid border rounded border-warning col-lg-4">
+              <img class="features-icon" src="images/fast_booking.png" alt="taxi">
+              <h1 class="features-grid-title">Fast Booking</h1>
+              <p class="features-text">No reservation costs. Great rates. We serve all around the island from Airport to Villas, Hotels or any other accomodation.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="features-image-container col-lg-4">
+          <img class="features-image" style="margin:auto !important;" src="images/happy_woman.png" alt="happy woman">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+       
+<footer class="bg-dark text-center text-white">
+    
+    <div class="container p-4">
+      
+      <section class="mb-4">
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+      
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+       
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+       
+     
+     
+      <section class="footerAnchors">
+    <br>
+      
+        <div class="row">
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+                <h5 >Terms & Conditions</h5>
+            </a>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+            
+                <h5 >Privacy Policy</h5>
+            </a>
+          </div>
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+
+                <h5 >Contact</h5>
+            </a>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#FormSection">
+
+                <h5 >Directions</h5>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="#">Mauritius Airport Transfers</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="app.js"></script>
+        
+
+    </body>
+</html>
+
+
+
